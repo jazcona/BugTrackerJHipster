@@ -52,6 +52,11 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.bugtracker.domain.User.class.getName() + ".authorities");
             createCache(cm, com.mycompany.bugtracker.domain.PersistentToken.class.getName());
             createCache(cm, com.mycompany.bugtracker.domain.User.class.getName() + ".persistentTokens");
+            createCache(cm, com.mycompany.bugtracker.domain.Project.class.getName());
+            createCache(cm, com.mycompany.bugtracker.domain.Label.class.getName());
+            createCache(cm, com.mycompany.bugtracker.domain.Label.class.getName() + ".tickets");
+            createCache(cm, com.mycompany.bugtracker.domain.Ticket.class.getName());
+            createCache(cm, com.mycompany.bugtracker.domain.Ticket.class.getName() + ".labels");
             // jhipster-needle-ehcache-add-entry
         };
     }
